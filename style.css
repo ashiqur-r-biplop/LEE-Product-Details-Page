@@ -23,8 +23,8 @@
 /* common css */
 .horizontal-line {
     width: calc(100% + 10px);
-    height: 1px;
-    background-color: #E2E2E3;
+    height: 1px !important;
+    background-color: #E2E2E3 !important;
     overflow: hidden;
 }
 
@@ -47,6 +47,11 @@
     padding: 12px 0px;
 }
 
+.sidebarImage .active {
+    border: 2px solid #929757;
+    border-radius: 5px;
+}
+
 .image-list {
     width: 100px;
     height: 100px;
@@ -55,6 +60,7 @@
 .image-list img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 /* first column image list end */
@@ -85,16 +91,18 @@
     color: #939859;
 
 }
+
 /* Add this to existing CSS file */
 
 .view-full-screen {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.692);
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -104,6 +112,8 @@
     position: relative;
     max-width: 90%;
     max-height: 90%;
+    width: 840px;
+    height: auto;
 }
 
 .show-full-screen-display-image img {
@@ -113,13 +123,17 @@
 
 .close-full-screen-image {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: -10%;
     font-weight: bold;
     cursor: pointer;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
 }
 
@@ -140,6 +154,7 @@
     background-color: #E7E7E9;
     padding: 8px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .full-screen-icon img {
@@ -174,6 +189,7 @@
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .prev-and-next-button button i {
@@ -200,20 +216,13 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 24px;
+    gap: 18px;
     padding: 12px 24px;
     height: 881px;
 
 }
 
-.view-full-screen {
-    background-color: rgba(128, 128, 128, 0.411);
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 
 /*  table style */
 .image-details-column table {
@@ -261,6 +270,7 @@
     height: 56px;
     border-radius: 100%;
     margin: 0px auto;
+    cursor: pointer;
 
 }
 
@@ -271,10 +281,15 @@
     font-weight: 400;
 }
 
+.color-box .active {
+    border: 2px solid #929757 !important;
+
+}
+
 /* ALL BACKGROUND COLOR IN COLOR PLATES */
 .color-palates .Olive {
     background-color: #4B4330 !important;
-    border: 2px solid #929757;
+
 }
 
 .color-palates .Camel {
@@ -356,9 +371,9 @@
 .image-info {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .image-info .image-info-title {
