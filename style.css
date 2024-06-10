@@ -1,5 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.container .div {
+    margin: 0px 12px;
+    border-top: 1px solid #E2E2E3;
+
+}
+
+/* common css */
+.horizontal-line {
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: #E2E2E3;
+    overflow: hidden;
+}
+
+/* grid */
+.lee-grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 3fr;
+    box-sizing: border-box;
+}
+
+/* first column image list start */
+.image-list-column {
+    width: calc(148px - 24px);
+}
+
+.sidebarImage {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0px;
+}
+
+.image-list {
+    width: 100px;
+    height: 100px;
+}
+
+.image-list img {
+    width: 100%;
+    height: 100%;
+}
+
+/* first column image list end */
+
+/* second column Show display image start */
+.show-image-column {
+    width: 100%;
+}
+
+.display-image {
+    width: 844px;
+    height: 881px;
+}
+
+/* second column Show display image end */
+
+/* third column Content box and color list start */
+.display-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-details-column {
+    width: 520px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 24px;
+    padding: 12px 24px;
+
+}
+
+/*  table style */
+.image-details-column table {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.image-details-column table .opacity-row {
+    opacity: 0;
+}
+
+.table-title {
+    color: #B1B48B;
+}
+
+.table-normal-text {
+    color: #5E4F2B;
+}
+
+
+
+/* color palates style */
+.color-palates {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.color-palates .color-box {
+    width: 72px;
+}
+
+.color-palates .color-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.color-palates .color-box .color {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin: 0px auto;
+
+}
+
+.color-palates .color-box h2 {
+    font-size: 14px;
+    color: #929757;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* ALL BACKGROUND COLOR IN COLOR PLATES */
+.color-palates .Olive {
+    background-color: #4B4330 !important;
+    border: 2px solid #929757;
+}
+
+.color-palates .Camel {
+    background-color: #B5875C !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Platinum-Grey {
+    background-color: #979CA0 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Oxblood {
+    background-color: #552D2E !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Anthracite {
+    background-color: #302F34 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Red {
+    background-color: #FA695E !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Green {
+    background-color: #A3EF9C !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Blue {
+    background-color: #60A9DA !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Orange {
+    background-color: #EAB959 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Yellow {
+    background-color: #F9F3C5 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Pink {
+    background-color: #DF7FC0 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Maroon {
+    background-color: #984662 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Indigo {
+    background-color: #ADB8ED !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Magenta {
+    background-color: #DA62F2 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Tan {
+    background-color: #F5DBC1 !important;
+    border: 2px solid transparent;
+}
+
+.color-palates .Teal {
+    background-color: #487C7D !important;
+    border: 2px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+/* third column Content box and color list end  */
