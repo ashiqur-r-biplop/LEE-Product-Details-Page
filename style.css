@@ -55,6 +55,8 @@
 .image-list {
     width: 100px;
     height: 100px;
+    background-color: #f7f8f8;
+    border-radius: 5px;
 }
 
 .image-list img {
