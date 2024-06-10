@@ -83,7 +83,53 @@
     text-transform: uppercase;
     border-radius: 50px;
     color: #939859;
+
 }
+/* Add this to existing CSS file */
+
+.view-full-screen {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.show-full-screen-display-image {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.show-full-screen-display-image img {
+    width: 100%;
+    height: auto;
+}
+
+.close-full-screen-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Add the full-screen class to style the image when in full-screen mode */
+.display-image.full-screen img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
 
 .full-screen-icon {
     position: absolute;
@@ -129,10 +175,12 @@
     border: none;
     outline: none;
 }
+
 .prev-and-next-button button i {
     font-size: 20px;
     color: #747375;
 }
+
 /* second column Show display image end */
 
 /* third column Content box and color list start */
@@ -141,6 +189,9 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+
 
 .image-details-column {
     width: 520px;
@@ -153,6 +204,15 @@
     padding: 12px 24px;
     height: 881px;
 
+}
+
+.view-full-screen {
+    background-color: rgba(128, 128, 128, 0.411);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*  table style */

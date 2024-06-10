@@ -17,7 +17,7 @@
             <div class="div">
                 <div class="lee-grid">
                     <!-- first column image list -->
-                    <div class="image-list-column ">
+                    <div class="image-list-column">
                         <div class="sidebarImage">
                             <div class="image-list">
                                 <img src="./Image/Image-1.png" alt="">
@@ -43,22 +43,24 @@
                         </div>
                     </div>
                     <!-- second column Show display image -->
-                    <div class="show-image-column">
-                        <div class="display-image">
-                            <img src="./Image/image-3.png" alt="">
-                        </div>
-                        <div class="view-in-room">
-                            <p>View in room</p>
-                        </div>
-                        <div class="full-screen-icon">
-                            <img src="./Image/full-screen-icon.png" alt="">
-                        </div>
-                        <div class="prev-and-next-button">
-                            <button><i class="fa-solid fa-arrow-left"></i></button>
-                            <div class="deg368-image">
-                                <img src="./Image/360-Icon.png" alt="">
+                    <div class="full-screen-image">
+                        <div class="show-image-column">
+                            <div class="display-image">
+                                <img src="./Image/test-image.png" alt="">
                             </div>
-                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                            <div class="view-in-room">
+                                <p>View in room</p>
+                            </div>
+                            <div class="full-screen-icon">
+                                <img src="./Image/full-screen-icon.png" alt="">
+                            </div>
+                            <div class="prev-and-next-button">
+                                <button id="prevButton"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="deg368-image">
+                                    <img src="./Image/360-Icon.png" alt="">
+                                </div>
+                                <button id="nextButton"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
                         </div>
                     </div>
                     <!-- third column Content box and color list -->
@@ -93,67 +95,84 @@
                         <div class="horizontal-line"></div>
                         <!-- image color variant -->
                         <div class="color-palates">
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(32%) sepia(12%) saturate(228%) hue-rotate(10deg) brightness(90%) contrast(95%)')"
+                                class="color-box">
                                 <div class="color Olive"></div>
                                 <h2>Olive</h2>
                             </div>
-                            <div class="color-box">
+
+                            <div onclick="setColorImage('invert(63%) sepia(39%) saturate(374%) hue-rotate(313deg) brightness(91%) contrast(87%)')"
+                                class="color-box">
                                 <div class="color Camel"></div>
                                 <h2>Camel</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(78%) sepia(4%) saturate(172%) hue-rotate(159deg) brightness(92%) contrast(88%)')"
+                                class="color-box">
                                 <div class="color Platinum-Grey"></div>
                                 <h2>Platinum Grey</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(35%) sepia(20%) saturate(303%) hue-rotate(333deg) brightness(88%) contrast(96%)')"
+                                class="color-box">
                                 <div class="color Oxblood"></div>
                                 <h2>Oxblood</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(19%) sepia(11%) saturate(331%) hue-rotate(189deg) brightness(92%) contrast(95%)')"
+                                class="color-box">
                                 <div class="color Anthracite"></div>
                                 <h2>Anthracite</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(30%) sepia(82%) saturate(5867%) hue-rotate(339deg) brightness(90%) contrast(97%)')"
+                                class="color-box">
                                 <div class="color Red"></div>
                                 <h2>Red</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(37%) sepia(76%) saturate(4840%) hue-rotate(104deg) brightness(90%) contrast(97%)')"
+                                class="color-box">
                                 <div class="color Green"></div>
                                 <h2>Green</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(54%) sepia(23%) saturate(3138%) hue-rotate(186deg) brightness(90%) contrast(99%)')"
+                                class="color-box">
                                 <div class="color Blue"></div>
                                 <h2>Blue</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(26%) sepia(62%) saturate(1624%) hue-rotate(41deg) brightness(96%) contrast(97%)')"
+                                class="color-box">
                                 <div class="color Orange"></div>
                                 <h2>Orange</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(100%) sepia(0%) saturate(11%) hue-rotate(332deg) brightness(98%) contrast(98%)')"
+                                class="color-box">
                                 <div class="color Yellow"></div>
                                 <h2>Yellow</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(76%) sepia(27%) saturate(5438%) hue-rotate(308deg) brightness(90%) contrast(95%)')"
+                                class="color-box">
                                 <div class="color Pink"></div>
                                 <h2>Pink</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(42%) sepia(31%) saturate(547%) hue-rotate(328deg) brightness(92%) contrast(96%)')"
+                                class="color-box">
                                 <div class="color Maroon"></div>
                                 <h2>Maroon</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(75%) sepia(18%) saturate(314%) hue-rotate(215deg) brightness(92%) contrast(91%)')"
+                                class="color-box">
                                 <div class="color Indigo"></div>
                                 <h2>Indigo</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(77%) sepia(64%) saturate(6627%) hue-rotate(280deg) brightness(91%) contrast(96%)')"
+                                class="color-box">
                                 <div class="color Magenta"></div>
                                 <h2>Magenta</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(95%) sepia(38%) saturate(145%) hue-rotate(33deg) brightness(95%) contrast(98%)')"
+                                class="color-box">
                                 <div class="color Tan"></div>
                                 <h2>Tan</h2>
                             </div>
-                            <div class="color-box">
+                            <div onclick="setColorImage('invert(31%) sepia(16%) saturate(577%) hue-rotate(177deg) brightness(96%) contrast(97%)')"
+                                class="color-box">
                                 <div class="color Teal"></div>
                                 <h2>Teal</h2>
                             </div>
@@ -202,11 +221,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="view-full-screen">
+                    <div class="show-full-screen-display-image">
+                        <img src="./Image/Image-1.png" alt="">
+                        <div class="close-full-screen-image">X</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/253828a4b7.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
