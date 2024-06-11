@@ -21,9 +21,10 @@ let currentColorIndex = 0;
 let currentFullScreenFilter = "";
 const div = document.createElement("div");
 div.classList.add("imageIndex");
+// count display image
 const imageIndex = () => {
   div.innerHTML = `<p>0${currentIndex + 1} / 0${imageList.length}</p>`;
-  displayImageParent.appendChild(div)
+  displayImageParent.appendChild(div);
 };
 
 // Function to update the displayed image
@@ -37,7 +38,7 @@ const updateDisplayImage = (index) => {
     currentIndex = index;
     // console.log(fullScreenImage.src);
   }
-  imageIndex()
+  imageIndex();
 };
 const setBorder = (index) => {
   // Loop through all images in imageList
@@ -157,4 +158,4 @@ const setColorImage = () => {
 updateDisplayImage(0);
 setBorder(0);
 setColorPalatesActives(0);
-imageIndex()
+imageIndex();
