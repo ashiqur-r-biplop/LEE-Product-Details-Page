@@ -3,6 +3,8 @@ const displayImage = document.querySelector(".display-image img");
 const fullScreenIcon = document.querySelector(".full-screen-icon");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
+const prevButtonMobile = document.getElementById("prevButtonMobile");
+const nextButtonMobile = document.getElementById("nextButtonMobile");
 const closeFullScreenButton = document.querySelector(
   ".close-full-screen-image"
 );
@@ -91,9 +93,21 @@ prevButton.addEventListener("click", () => {
   updateDisplayImage(newIndex);
   setBorder(newIndex);
 });
+// mobile prev button in display image
+prevButtonMobile.addEventListener("click", () => {
+  const newIndex = currentIndex > 0 ? currentIndex - 1 : imageList.length - 1;
+  updateDisplayImage(newIndex);
+  setBorder(newIndex);
+});
 
 // Click event for next button
 nextButton.addEventListener("click", () => {
+  const newIndex = currentIndex < imageList.length - 1 ? currentIndex + 1 : 0;
+  updateDisplayImage(newIndex);
+  setBorder(newIndex);
+});
+// next button in mobile display image
+nextButtonMobile.addEventListener("click", () => {
   const newIndex = currentIndex < imageList.length - 1 ? currentIndex + 1 : 0;
   updateDisplayImage(newIndex);
   setBorder(newIndex);

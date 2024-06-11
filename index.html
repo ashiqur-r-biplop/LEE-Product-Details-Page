@@ -1,222 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lee</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <section>
-        <div class="container">
-            <!-- grid Layout -->
-            <div class="div">
-                <div class="lee-grid">
-                    <!-- first column image list -->
-                    <div class="image-list-column">
-                        <div class="sidebarImage">
-                            <div class="image-list">
-                                <img src="./Image/Image-1.png" alt="">
-                            </div>
-                            <div class="image-list">
-                                <img src="./Image/Image-2.png" alt="">
-                            </div>
-                            <div class="image-list">
-                                <img src="./Image/Image-3.png" alt="">
-                            </div>
-                            <div class="image-list">
-                                <img src="./Image/Image-4.png" alt="">
-                            </div>
-                            <div class="image-list">
-                                <img src="./Image/Image-5.png" alt="">
-                            </div>
-                            <div class="image-list">
-                                <img src="./Image/Image-6.png" alt="">
-                            </div>
-                            <div class="image-list">
-                                <img src="./Image/Image-1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- second column Show display image -->
-                    <div class="full-screen-image">
-                        <div class="show-image-column">
-                            <div class="display-image">
-                                <img src="./Image/Image-1.png" alt="">
-                            </div>
-                            <div class="view-in-room">
-                                <p>View in room</p>
-                            </div>
-                            <div class="full-screen-icon">
-                                <img src="./Image/full-screen-icon.png" alt="">
-                            </div>
-                            <div class="prev-and-next-button">
-                                <button id="prevButton"><i class="fa-solid fa-arrow-left"></i></button>
-                                <div class="deg368-image">
-                                    <img src="./Image/360-Icon.png" alt="">
-                                </div>
-                                <button id="nextButton"><i class="fa-solid fa-arrow-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- third column Content box and color list -->
-                    <div class="image-details-column">
-                        <!-- image details table -->
-                        <table border="0">
-                            <tr>
-                                <td class="table-title">Overral</td>
-                                <td class="table-normal-text">W32 d37 h38</td>
-                            </tr>
-                            <tr>
-                                <td class="table-title">inside</td>
-                                <td class="table-normal-text">W26 d21 h19</td>
-                            </tr>
-                            <tr class="opacity-row">
-                                <td class="table-title">inside</td>
-                                <td class="table-normal-text">W26 d21 h19</td>
-                            </tr>
-                            <tr>
-                                <td class="table-title">seat</td>
-                                <td class="table-normal-text">18</td>
-                            </tr>
-                            <tr>
-                                <td class="table-title">arm ht</td>
-                                <td class="table-normal-text">24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-title">Back rail ht</td>
-                                <td class="table-normal-text">38</td>
-                            </tr>
-                        </table>
-                        <div class="horizontal-line"></div>
-                        <!-- image color variant -->
-                        <div class="color-palates">
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Olive"></div>
-                                <h2>Olive</h2>
-                            </div>
-
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Camel"></div>
-                                <h2>Camel</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Platinum-Grey"></div>
-                                <h2>Platinum Grey</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Oxblood"></div>
-                                <h2>Oxblood</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Anthracite"></div>
-                                <h2>Anthracite</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Red"></div>
-                                <h2>Red</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Green"></div>
-                                <h2>Green</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Blue"></div>
-                                <h2>Blue</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Orange"></div>
-                                <h2>Orange</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Yellow"></div>
-                                <h2>Yellow</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Pink"></div>
-                                <h2>Pink</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Maroon"></div>
-                                <h2>Maroon</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Indigo"></div>
-                                <h2>Indigo</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Magenta"></div>
-                                <h2>Magenta</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Tan"></div>
-                                <h2>Tan</h2>
-                            </div>
-                            <div onclick="setColorImage()" class="color-box">
-                                <div class="color Teal"></div>
-                                <h2>Teal</h2>
-                            </div>
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <!-- image info -->
-                        <div class="image-info">
-                            <div>
-                                <h2 class="image-info-title">Standard with</h2>
-                                <p>Welt</p>
-                                <p>Down Back</p>
-                                <p>Cushion - naturallee</p>
-                            </div>
-                            <div>
-                                <p>Same farme as 1211-01, back cushion is 3-inches lower</p>
-                            </div>
-                            <div class="image-info-notice">
-                                <p>* Please direct all pricing questions to your nearest LEE Industries Retail Partner
-                                    .*</p>
-                            </div>
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <!-- icons -->
-                        <div class="social-group">
-                            <div class="details-page-icons">
-                                <div class="icons">
-                                    <i class="fa-solid fa-file"></i>
-                                </div>
-                                <div class="icons">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="icons">
-                                    <i class="fa-solid fa-folder-open"></i>
-                                </div>
-                                <div class="icons">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="icons">
-                                    <i class="fa-solid fa-file-lines"></i>
-                                </div>
-                                <div class="icons">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                            </div>
-                            <p class="">Share on social:</p>
-                        </div>
-                    </div>
+      <div class="container">
+        <!-- grid Layout -->
+        <div class="div">
+          <div class="lee-grid">
+            <!-- first column image list -->
+            <div class="image-list-column">
+              <div class="sidebarImage">
+                <div class="image-list">
+                  <img src="./Image/Image-1.png" alt="" />
                 </div>
-                <div class="view-full-screen">
-                    <div class="show-full-screen-display-image">
-                        <img src="./Image/Image-1.png" alt="">
-                        <div class="close-full-screen-image">X</div>
-                    </div>
+                <div class="image-list">
+                  <img src="./Image/Image-2.png" alt="" />
                 </div>
+                <div class="image-list">
+                  <img src="./Image/Image-3.png" alt="" />
+                </div>
+                <div class="image-list">
+                  <img src="./Image/Image-4.png" alt="" />
+                </div>
+                <div class="image-list">
+                  <img src="./Image/Image-5.png" alt="" />
+                </div>
+                <div class="image-list">
+                  <img src="./Image/Image-6.png" alt="" />
+                </div>
+                <div class="image-list">
+                  <img src="./Image/Image-1.png" alt="" />
+                </div>
+              </div>
             </div>
+            <!-- second column Show display image -->
+            <div class="full-screen-image">
+              <div class="show-image-column">
+                <div class="display-image">
+                  <img src="./Image/Image-1.png" alt="" />
+                </div>
+                <div class="view-in-room">
+                  <p>View in room</p>
+                </div>
+                <div class="full-screen-icon">
+                  <img src="./Image/full-screen-icon.png" alt="" />
+                </div>
+                <div class="prev-and-next-button">
+                  <button id="prevButton">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <div class="deg368-image">
+                    <img src="./Image/360-Icon.png" alt="" />
+                  </div>
+                  <button id="nextButton">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="mobile-next-and-prev-button-group">
+                  <button id="prevButtonMobile">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button id="nextButtonMobile">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- third column Content box and color list -->
+            <div class="image-details-column">
+              <!-- image details table -->
+              <table border="0">
+                <tr>
+                  <td class="table-title">Overral</td>
+                  <td class="table-normal-text">W32 d37 h38</td>
+                </tr>
+                <tr>
+                  <td class="table-title">inside</td>
+                  <td class="table-normal-text">W26 d21 h19</td>
+                </tr>
+                <tr class="opacity-row">
+                  <td class="table-title">inside</td>
+                  <td class="table-normal-text">W26 d21 h19</td>
+                </tr>
+                <tr>
+                  <td class="table-title">seat</td>
+                  <td class="table-normal-text">18</td>
+                </tr>
+                <tr>
+                  <td class="table-title">arm ht</td>
+                  <td class="table-normal-text">24</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Back rail ht</td>
+                  <td class="table-normal-text">38</td>
+                </tr>
+              </table>
+              <div class="horizontal-line"></div>
+              <!-- image color variant -->
+              <div class="color-palates">
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Olive"></div>
+                  <h2>Olive</h2>
+                </div>
+
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Camel"></div>
+                  <h2>Camel</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Platinum-Grey"></div>
+                  <h2>Platinum Grey</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Oxblood"></div>
+                  <h2>Oxblood</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Anthracite"></div>
+                  <h2>Anthracite</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Red"></div>
+                  <h2>Red</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Green"></div>
+                  <h2>Green</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Blue"></div>
+                  <h2>Blue</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Orange"></div>
+                  <h2>Orange</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Yellow"></div>
+                  <h2>Yellow</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Pink"></div>
+                  <h2>Pink</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Maroon"></div>
+                  <h2>Maroon</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Indigo"></div>
+                  <h2>Indigo</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Magenta"></div>
+                  <h2>Magenta</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box">
+                  <div class="color Tan"></div>
+                  <h2>Tan</h2>
+                </div>
+                <div onclick="setColorImage()" class="color-box color-Teal">
+                  <div class="color Teal"></div>
+                  <h2>Teal</h2>
+                </div>
+              </div>
+              <div class="horizontal-line"></div>
+              <!-- image info -->
+              <div class="image-info">
+                <div>
+                  <h2 class="image-info-title">Standard with</h2>
+                  <p>Welt</p>
+                  <p>Down Back</p>
+                  <p>Cushion - naturallee</p>
+                </div>
+                <div>
+                  <p>Same farme as 1211-01, back cushion is 3-inches lower</p>
+                </div>
+                <div class="image-info-notice">
+                  <p>
+                    * Please direct all pricing questions to your nearest LEE
+                    Industries Retail Partner .*
+                  </p>
+                </div>
+              </div>
+              <div class="horizontal-line"></div>
+              <!-- icons -->
+              <div class="social-group">
+                <div class="details-page-icons">
+                  <div class="icons">
+                    <i class="fa-solid fa-file"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="fa-solid fa-folder-open"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                </div>
+                <p class="">Share on social:</p>
+              </div>
+            </div>
+          </div>
+          <div class="view-full-screen">
+            <div class="show-full-screen-display-image">
+              <img src="./Image/Image-1.png" alt="" />
+              <div class="close-full-screen-image"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- font awesome link  -->
-    <script src="https://kit.fontawesome.com/253828a4b7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/253828a4b7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
