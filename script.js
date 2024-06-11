@@ -5,6 +5,7 @@ const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 const prevButtonMobile = document.getElementById("prevButtonMobile");
 const nextButtonMobile = document.getElementById("nextButtonMobile");
+const displayImageParent = document.getElementById("display-image-parent");
 const closeFullScreenButton = document.querySelector(
   ".close-full-screen-image"
 );
@@ -18,6 +19,12 @@ let currentIndex = 0;
 let currentColorIndex = 0;
 
 let currentFullScreenFilter = "";
+const div = document.createElement("div");
+div.classList.add("imageIndex");
+const imageIndex = () => {
+  div.innerHTML = `<p>0${currentIndex + 1} / 0${imageList.length}</p>`;
+  displayImageParent.appendChild(div)
+};
 
 // Function to update the displayed image
 const updateDisplayImage = (index) => {
@@ -30,6 +37,7 @@ const updateDisplayImage = (index) => {
     currentIndex = index;
     // console.log(fullScreenImage.src);
   }
+  imageIndex()
 };
 const setBorder = (index) => {
   // Loop through all images in imageList
@@ -114,7 +122,7 @@ nextButtonMobile.addEventListener("click", () => {
 });
 
 // set color image url
-function setColorImage() {
+const setColorImage = () => {
   const displayImage = document.querySelector(".display-image img");
 
   const colorImageMap = {
@@ -143,9 +151,10 @@ function setColorImage() {
     }/${color}.png`;
     currentFullScreenFilter = displayImage.src;
   }
-}
+};
 
 // set active index
 updateDisplayImage(0);
 setBorder(0);
 setColorPalatesActives(0);
+imageIndex()
