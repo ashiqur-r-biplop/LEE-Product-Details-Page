@@ -21,8 +21,12 @@ let currentFullScreenFilter = "";
 const updateDisplayImage = (index) => {
   const selectedImage = imageList[index];
   if (selectedImage) {
+    console.log(selectedImage.src);
     displayImage.src = selectedImage.src;
+    currentFullScreenFilter = selectedImage.src;
+    fullScreenImage.src = currentFullScreenFilter;
     currentIndex = index;
+    // console.log(fullScreenImage.src);
   }
 };
 const setBorder = (index) => {
@@ -58,6 +62,7 @@ const setColorPalatesActives = (index) => {
     colorBox.classList.remove("active");
     // Add "active" class to the parent node of the clicked color box
     if (i === index) {
+      currentColorIndex = i;
       colorBox.classList.add("active");
     }
   });
@@ -67,7 +72,7 @@ const setColorPalatesActives = (index) => {
 fullScreenIcon.addEventListener("click", () => {
   fullScreenOverlay.style.display = "flex";
   fullScreenImage.src = displayImage.src;
-  fullScreenImage.style.filter = currentFullScreenFilter; // Apply the filter to fullScreenImage
+  fullScreenImage.src = currentFullScreenFilter; // Apply the filter to fullScreenImage
 });
 
 // Click event for closing full-screen mode
@@ -94,11 +99,39 @@ nextButton.addEventListener("click", () => {
   setBorder(newIndex);
 });
 
-function setColorImage(filter) {
+// set color image url
+function setColorImage() {
   const displayImage = document.querySelector(".display-image img");
-  displayImage.style.filter = filter;
-  currentFullScreenFilter = filter;
+
+  const colorImageMap = {
+    0: "Olive",
+    1: "Camel",
+    2: "Platinum-Grey",
+    3: "Oxblood",
+    4: "Anthracite",
+    5: "Red",
+    6: "Green",
+    7: "Blue",
+    8: "Orange",
+    9: "Yellow",
+    10: "Pink",
+    11: "Maroon",
+    12: "Indigo",
+    13: "Magenta",
+    14: "Tan",
+    15: "Teal",
+  };
+
+  if (colorImageMap[currentColorIndex]) {
+    const color = colorImageMap[currentColorIndex];
+    displayImage.src = `./Image/ColorImage/image-${
+      currentIndex + 1
+    }/${color}.png`;
+    currentFullScreenFilter = displayImage.src;
+  }
 }
+
 // set active index
+updateDisplayImage(0);
 setBorder(0);
 setColorPalatesActives(0);
