@@ -124,7 +124,7 @@ nextButtonMobile.addEventListener("click", () => {
   updateDisplayImage(newIndex);
   setBorder(newIndex);
 });
-
+ 
 // Set color image URL
 const setColorImage = () => {
   const displayImage = document.querySelector(".display-image img");
