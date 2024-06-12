@@ -615,4 +615,12 @@
 
     font-size: 16px;
   }
+  
+.show-full-screen-display-image {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  width: 100%;
+  height: auto;
+}
 }
