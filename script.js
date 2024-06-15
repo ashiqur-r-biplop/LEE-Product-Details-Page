@@ -6,9 +6,13 @@ const nextButton = document.getElementById("nextButton");
 const prevButtonMobile = document.getElementById("prevButtonMobile");
 const nextButtonMobile = document.getElementById("nextButtonMobile");
 const displayImageParent = document.getElementById("display-image-parent");
-const closeFullScreenButton = document.querySelector(".close-full-screen-image");
+const closeFullScreenButton = document.querySelector(
+  ".close-full-screen-image"
+);
 const fullScreenOverlay = document.querySelector(".view-full-screen");
-const fullScreenImage = document.querySelector(".show-full-screen-display-image img");
+const fullScreenImage = document.querySelector(
+  ".show-full-screen-display-image img"
+);
 const colorBoxes = document.querySelectorAll(".color");
 
 let currentIndex = 0;
@@ -124,7 +128,7 @@ nextButtonMobile.addEventListener("click", () => {
   updateDisplayImage(newIndex);
   setBorder(newIndex);
 });
- 
+
 // Set color image URL
 const setColorImage = () => {
   const displayImage = document.querySelector(".display-image img");
@@ -150,7 +154,9 @@ const setColorImage = () => {
 
   if (colorImageMap[currentColorIndex]) {
     const color = colorImageMap[currentColorIndex];
-    displayImage.src = `./Image/ColorImage/image-${currentIndex + 1}/${color}.png`;
+    displayImage.src = `./Image/ColorImage/image-${
+      currentIndex + 1
+    }/${color}.png`;
     currentFullScreenFilter = displayImage.src;
   }
 };
