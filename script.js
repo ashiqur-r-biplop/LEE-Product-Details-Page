@@ -111,7 +111,7 @@ prevButton.addEventListener("click", () => {
 // Mobile previous button in display image
 prevButtonMobile.addEventListener("click", () => {
   const newIndex = currentIndex > 0 ? currentIndex - 1 : imageList.length - 1;
-  updateDisplayImage(newIndex);
+  updateDisplayImage(newIndex); 
   setBorder(newIndex);
 });
 
